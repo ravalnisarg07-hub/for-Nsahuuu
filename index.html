@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>For Nasera 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Caveat:wght@600&family=Fredoka:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="fx" aria-hidden="true"></div>
+
+  <section id="intro">
+    <div class="panda wave" aria-hidden="true">🐼</div>
+    <p class="hand l1">Nashuuuuuuuu Bachaaaa... 🎀</p>
+    <p class="l2">I made this little corner of the internet just for you.</p>
+    <p class="l3">Not to tell you to forget everything.<br>Not to tell you to be okay immediately.<br>Just... a place
+      you can come to whenever you need it.</p>
+    <button class="btn l4" id="enter">Come in Bachaaaa 🌸</button>
+  </section>
+
+  <main id="app" class="hide">
+    <header>
+      <button id="night" class="ghost" aria-label="Toggle night mode">🌙</button>
+      <h1>Nasera's little corner</h1>
+      <p>You're allowed to heal slowly.</p>
+      <div id="prog" aria-label="Days opened"></div>
+      <small>One day at a time.</small>
+    </header>
+
+    <section>
+      <h2>Seven little days</h2>
+      <p class="sub">Open one whenever you're ready. No rush, no right order.</p>
+      <div id="days"></div>
+    </section>
+
+    <section>
+      <h2>When you really need it</h2>
+      <button class="btn" id="need">💌 Open this when you really need it</button>
+      <p id="note" class="hand note"></p>
+    </section>
+
+    <section>
+      <h2>Open when...</h2>
+      <div id="ow"></div>
+    </section>
+
+    <section id="s-play">
+      <h2>Okay, enough emotional damage. 😭🎀</h2>
+      <div class="box">
+        <h3>🐼 Catch the Panda</h3>
+        <p>Score <b id="cs">0</b> &nbsp; Time <b id="ct">15</b> &nbsp; Best <b id="cb">0</b></p>
+        <div id="arena"><button id="cp" class="hide" aria-label="Panda">🐼</button></div>
+        <button class="btn" id="cstart">Start</button>
+      </div>
+      <div class="box">
+        <h3>💗 Memory Match</h3>
+        <p>Moves <b id="mm">0</b></p>
+        <div id="mg"></div>
+        <button class="btn" id="mreset">New game</button>
+      </div>
+      <div class="box">
+        <h3>🌸 Tiny Mood Game</h3>
+        <p>How are you feeling today?</p>
+        <div id="moods"></div>
+        <p id="mres" class="hand"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Little things that make life lighter 🌸</h2>
+      <p class="sub">Tap a video to play it. Edit the captions in index.html.</p>
+      <div id="mem">
+        <figure><img src="assets/images/memory1.jpg" alt="A memory" loading="lazy" onerror="this.remove()">
+          <figcaption>A little memory 🌸</figcaption>
+        </figure>
+        <figure><img src="assets/images/memory2.jpg" alt="A memory" loading="lazy" onerror="this.remove()">
+          <figcaption>A little memory 🌸</figcaption>
+        </figure>
+        <figure><img src="assets/images/memory3.jpg" alt="A memory" loading="lazy" onerror="this.remove()">
+          <figcaption>A little memory 🌸</figcaption>
+        </figure>
+        <figure><img src="assets/images/memory4.jpg" alt="A memory" loading="lazy" onerror="this.remove()">
+          <figcaption>A little memory 🌸</figcaption>
+        </figure>
+        <figure><video src="assets/videos/memory-video1.mp4" controls playsinline preload="metadata"></video>
+          <figcaption>A little moment 🎀</figcaption>
+        </figure>
+        <figure><video src="assets/videos/memory-video2.mp4" controls playsinline preload="metadata"></video>
+          <figcaption>A little moment 🎀</figcaption>
+        </figure>
+        <figure><video src="assets/videos/memory-video3.mp4" controls playsinline preload="metadata"></video>
+          <figcaption>A little moment 🎀</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Take a little break 🌙</h2>
+      <div class="box calm">
+        <div id="circle"></div>
+        <p id="btxt" class="hand">Press start. Breathe in 4, out 4.</p>
+        <button class="btn" id="bstart">Start breathing</button>
+      </div>
+      <div class="box">
+        <button class="btn" id="fortune">🥠 Fortune cookie</button>
+        <button class="btn" id="dont">Do not click</button>
+        <button class="btn" id="star">⭐</button>
+        <button class="btn" id="heart">💗</button>
+        <p id="fres" class="hand"></p>
+        <button class="ghost flower" id="flower" aria-label="Bloom the flower">🌱</button>
+      </div>
+    </section>
+
+    <footer>
+      <p class="hand">Whenever it's heavy, you know where to find this corner. 🌸</p>
+    </footer>
+  </main>
+
+  <div id="pb" class="hide"><span id="pt"></span><button id="pp" aria-label="Panda says hi">🐼</button></div>
+  <div id="modal" class="hide">
+    <div class="sheet">
+      <div id="mc"></div><button class="btn" id="close">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
